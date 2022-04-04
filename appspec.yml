@@ -3,5 +3,9 @@ os: windows
 files:
     - source: \index_1.html
     destination: c:\inetpub\wwwroot
+hooks:
+  BeforeInstall:
+    - location: \before-install.bat
+      timeout: 900
 
 
